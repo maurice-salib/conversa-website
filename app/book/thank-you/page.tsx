@@ -2,7 +2,7 @@ import Link from "next/link";
 
 /* ──────────────────────── PAGE ───────────────────────────────── */
 export const metadata = {
-  title: "You're All Set! | Icon Media Co",
+  title: "You're All Set! | Conversa",
   description:
     "Your strategy session is booked. Here's what to expect next.",
 };

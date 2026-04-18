@@ -43,10 +43,10 @@ export default function SchedulePage() {
           </p>
         </div>
 
-        {/* Cal.com embed */}
+        {/* GHL booking widget */}
         <div className="rounded-2xl overflow-hidden border border-border bg-card animate-fade-in-up delay-200">
           <iframe
-            src="https://cal.com/mauricesalib/strategy-session"
+            src="https://link.iconmediaco.com/widget/booking/DpPtmZHaY5Xv1cr79hyg"
             style={{ width: "100%", height: "700px", border: "none" }}
             title="Book a Strategy Session"
           />

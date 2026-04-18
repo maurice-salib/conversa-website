@@ -993,13 +993,23 @@ function BookSection() {
           <p className="mt-1 text-sm text-muted">Free 30-min call · No commitment · No contracts</p>
         </div>
 
-        <div className="rounded-2xl overflow-hidden border border-border bg-card">
-          <iframe
-            src="https://link.iconmediaco.com/widget/booking/GRaS75T7cCEPfvRggZ3i"
-            style={{ width: "100%", height: "780px", border: "none" }}
-            title="Book a Strategy Session"
-            scrolling="no"
-          />
+        {/* Scale wrapper: shrinks the widget to ~80% so full calendar
+            fits in one viewport without internal scrolling */}
+        <div className="rounded-2xl overflow-hidden border border-border bg-card"
+          style={{ height: "660px" }}>
+          <div style={{
+            transform: "scale(0.8)",
+            transformOrigin: "top left",
+            width: "125%",
+            height: "825px",
+          }}>
+            <iframe
+              src="https://link.iconmediaco.com/widget/booking/GRaS75T7cCEPfvRggZ3i"
+              style={{ width: "100%", height: "825px", border: "none" }}
+              title="Book a Strategy Session"
+              scrolling="no"
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -984,30 +984,27 @@ function FinalCTA() {
 ───────────────────────────────────────────────────────────────── */
 function BookSection() {
   return (
-    <section id="book" className="py-16 sm:py-24 scroll-mt-20">
+    <section id="book" className="py-8 sm:py-12 scroll-mt-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-teal/25 bg-teal/8 text-sm text-teal mb-6">
+        <div className="text-center mb-5">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-teal/25 bg-teal/8 text-sm text-teal mb-4">
             <span className="w-2 h-2 rounded-full bg-teal animate-pulse" />
             Free 30-min call · No commitment
           </div>
-          <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-black tracking-tight">
             Let&apos;s Talk
           </h2>
-          <p className="mt-4 text-lg text-muted max-w-xl mx-auto">
-            Pick a time that works. We&apos;ll audit your current setup, show you exactly how Conversa fills your calendar, and map out your first 30 days.
-          </p>
         </div>
 
         <div className="rounded-2xl overflow-hidden border border-border bg-card">
           <iframe
             src="https://link.iconmediaco.com/widget/booking/GRaS75T7cCEPfvRggZ3i"
-            style={{ width: "100%", height: "700px", border: "none" }}
+            style={{ width: "100%", height: "600px", border: "none" }}
             title="Book a Strategy Session"
           />
         </div>
 
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-6 sm:gap-10">
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-6 sm:gap-10">
           {["No contracts", "100% free", "Real results in week 1"].map((item) => (
             <div key={item} className="flex items-center gap-2 text-sm text-muted">
               <svg className="w-5 h-5 text-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

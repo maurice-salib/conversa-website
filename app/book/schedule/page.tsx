@@ -47,7 +47,7 @@ export default function SchedulePage() {
         <div className="rounded-2xl overflow-hidden border border-border bg-card animate-fade-in-up delay-200">
           <iframe
             src="https://link.iconmediaco.com/widget/booking/GRaS75T7cCEPfvRggZ3i"
-            style={{ width: "100%", height: "700px", border: "none" }}
+            style={{ width: "100%", height: "600px", border: "none" }}
             title="Book a Strategy Session"
           />
         </div>

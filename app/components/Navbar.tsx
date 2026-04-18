@@ -68,6 +68,12 @@ export default function Navbar() {
           {/* CTA + Mobile Toggle */}
           <div className="flex items-center gap-4">
             <Link
+              href="/login"
+              className="hidden md:inline-flex items-center px-4 py-2 text-sm font-medium text-muted hover:text-white transition-colors"
+            >
+              Login
+            </Link>
+            <Link
               href="/#book"
               className="hidden md:inline-flex items-center px-4 py-2 text-sm font-medium rounded-lg bg-teal text-[#0a0a0f] hover:bg-teal-dark transition-colors"
             >
@@ -114,6 +120,13 @@ export default function Navbar() {
               onClick={() => setMobileOpen(false)}
             >
               Book a Demo
+            </Link>
+            <Link
+              href="/login"
+              className="block text-center px-4 py-2.5 text-sm font-medium text-muted hover:text-white transition-colors"
+              onClick={() => setMobileOpen(false)}
+            >
+              Login
             </Link>
           </div>
         </div>

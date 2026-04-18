@@ -34,13 +34,13 @@ function Hero() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Live badge */}
-        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-teal/25 bg-teal/5 text-sm text-teal mb-10 animate-fade-in">
-          <span className="w-2 h-2 rounded-full bg-teal animate-pulse" />
-          Live in 14 Australian markets — {" "}
-          <span className="text-white/70">3 sessions booked in the last hour</span>
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full border border-teal/25 bg-teal/5 text-xs sm:text-sm text-teal mb-10 animate-fade-in whitespace-nowrap">
+          <span className="w-2 h-2 rounded-full bg-teal animate-pulse shrink-0" />
+          <span className="hidden sm:inline">Live in 14 Australian markets — <span className="text-white/70">3 sessions booked in the last hour</span></span>
+          <span className="sm:hidden text-white/70">3 sessions booked today</span>
         </div>
 
-        <h1 className="text-5xl sm:text-7xl md:text-8xl font-black tracking-tighter leading-[1.05] animate-fade-in-up">
+        <h1 className="text-[2rem] leading-tight sm:text-6xl md:text-8xl font-black tracking-tighter sm:leading-[1.05] animate-fade-in-up">
           The Last Appointment
           <br />
           <span className="text-teal">Setter You'll</span>
@@ -58,7 +58,7 @@ function Hero() {
         </p>
 
         {/* Inline stats */}
-        <div className="mt-12 flex flex-wrap items-center justify-center gap-10 animate-fade-in-up delay-200">
+        <div className="mt-12 flex flex-wrap items-center justify-center gap-6 sm:gap-10 animate-fade-in-up delay-200">
           {[
             { n: "$800K+", l: "GCI in 30 days" },
             { n: "8", l: "Listings in 30 days" },
@@ -96,14 +96,14 @@ function Hero() {
         </p>
 
         {/* Waveform */}
-        <div className="mt-16 flex items-end justify-center gap-1 h-20 animate-fade-in delay-600">
-          {Array.from({ length: 64 }).map((_, i) => (
+        <div className="mt-16 w-full overflow-hidden flex items-end justify-center gap-[3px] h-20 animate-fade-in delay-600">
+          {Array.from({ length: 40 }).map((_, i) => (
             <div
               key={i}
-              className="w-1 bg-teal/20 rounded-full animate-wave"
+              className="w-1 sm:w-1.5 bg-teal/20 rounded-full animate-wave shrink-0"
               style={{
                 height: `${Math.random() * 60 + 10}px`,
-                animationDelay: `${i * 0.035}s`,
+                animationDelay: `${i * 0.055}s`,
               }}
             />
           ))}
@@ -164,7 +164,7 @@ function Problem() {
           <p className="text-xs font-mono text-teal uppercase tracking-[0.25em] mb-5">
             The brutal truth
           </p>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[0.95]">
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.0] sm:leading-[0.95]">
             Your database has
             <br />
             <span className="text-teal">500+ contacts.</span>
@@ -933,7 +933,7 @@ function FinalCTA() {
           <div className="absolute -top-24 -right-24 w-[500px] h-[500px] bg-teal/8 rounded-full blur-[120px]" />
           <div className="absolute -bottom-24 -left-24 w-[400px] h-[400px] bg-purple-500/5 rounded-full blur-[100px]" />
 
-          <div className="relative px-6 py-20 sm:px-16 sm:py-24 text-center">
+          <div className="relative px-5 py-16 sm:px-16 sm:py-24 text-center">
             {/* Scarcity badge */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-teal/25 bg-teal/8 text-sm text-teal mb-8">
               <span className="w-2 h-2 rounded-full bg-teal animate-pulse" />
@@ -953,7 +953,7 @@ function FinalCTA() {
 
             <Link
               href="/book"
-              className="inline-flex items-center mt-10 px-12 py-5 text-xl font-black rounded-2xl bg-teal text-[#0a0a0f] hover:bg-teal-dark transition-colors animate-pulse-teal"
+              className="inline-flex items-center mt-10 w-full sm:w-auto justify-center px-8 sm:px-12 py-4 sm:py-5 text-lg sm:text-xl font-black rounded-2xl bg-teal text-[#0a0a0f] hover:bg-teal-dark transition-colors animate-pulse-teal"
             >
               Book Your Free Strategy Session
             </Link>

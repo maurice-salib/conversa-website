@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import ScrollFade from "../book/ScrollFade";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import ScrollFade from "./book/ScrollFade";
 
 export const metadata = {
   title: "Conversa — The AI That Books Listings While You Sleep",

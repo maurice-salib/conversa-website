@@ -11,6 +11,11 @@ const nextConfig: NextConfig = {
         source: "/login/:path*",
         destination: "https://conversa-app-psi.vercel.app/:path*",
       },
+      // Proxy the app's API routes so client-side fetch calls work
+      {
+        source: "/api/:path*",
+        destination: "https://conversa-app-psi.vercel.app/api/:path*",
+      },
       {
         source: "/medipay",
         destination: "https://conversa-app-psi.vercel.app/medipay",

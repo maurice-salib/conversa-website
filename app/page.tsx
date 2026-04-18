@@ -40,7 +40,7 @@ function Hero() {
           <span className="text-white/70">3 sessions booked in the last hour</span>
         </div>
 
-        <h1 className="text-5xl sm:text-7xl md:text-8xl font-black tracking-tighter leading-[0.88] animate-fade-in-up">
+        <h1 className="text-5xl sm:text-7xl md:text-8xl font-black tracking-tighter leading-[1.05] animate-fade-in-up">
           The Last Appointment
           <br />
           <span className="text-teal">Setter You'll</span>

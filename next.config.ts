@@ -1,12 +1,23 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  async redirects() {
+  async rewrites() {
     return [
       {
         source: "/login",
         destination: "https://conversa-app-psi.vercel.app/",
-        permanent: false,
+      },
+      {
+        source: "/login/:path*",
+        destination: "https://conversa-app-psi.vercel.app/:path*",
+      },
+      {
+        source: "/medipay",
+        destination: "https://conversa-app-psi.vercel.app/medipay",
+      },
+      {
+        source: "/medipay/:path*",
+        destination: "https://conversa-app-psi.vercel.app/medipay/:path*",
       },
     ];
   },

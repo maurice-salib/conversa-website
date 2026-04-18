@@ -78,7 +78,7 @@ function Hero() {
 
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up delay-300">
           <Link
-            href="/book"
+            href="#book"
             className="w-full sm:w-auto px-10 py-4 text-lg font-bold rounded-xl bg-teal text-[#0a0a0f] hover:bg-teal-dark transition-colors animate-pulse-teal"
           >
             Book Your Free Strategy Session
@@ -894,7 +894,7 @@ function Pricing() {
               </ul>
 
               <Link
-                href="/contact"
+                href="#book"
                 className={`mt-8 block text-center px-6 py-3.5 rounded-xl text-sm font-bold transition-colors ${
                   tier.highlighted
                     ? "bg-teal text-[#0a0a0f] hover:bg-teal-dark"
@@ -911,7 +911,7 @@ function Pricing() {
           All plans include a{" "}
           <span className="text-white">14-day free trial</span>. Need something
           custom?{" "}
-          <Link href="/contact" className="text-teal hover:underline">
+          <Link href="#book" className="text-teal hover:underline">
             Talk to our team
           </Link>
           .
@@ -952,7 +952,7 @@ function FinalCTA() {
             </p>
 
             <Link
-              href="/book"
+              href="#book"
               className="inline-flex items-center mt-10 w-full sm:w-auto justify-center px-8 sm:px-12 py-4 sm:py-5 text-lg sm:text-xl font-black rounded-2xl bg-teal text-[#0a0a0f] hover:bg-teal-dark transition-colors animate-pulse-teal"
             >
               Book Your Free Strategy Session
@@ -973,6 +973,49 @@ function FinalCTA() {
               ))}
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   BOOK SECTION
+───────────────────────────────────────────────────────────────── */
+function BookSection() {
+  return (
+    <section id="book" className="py-16 sm:py-24 scroll-mt-20">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-10">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-teal/25 bg-teal/8 text-sm text-teal mb-6">
+            <span className="w-2 h-2 rounded-full bg-teal animate-pulse" />
+            Free 30-min call · No commitment
+          </div>
+          <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
+            Let&apos;s Talk
+          </h2>
+          <p className="mt-4 text-lg text-muted max-w-xl mx-auto">
+            Pick a time that works. We&apos;ll audit your current setup, show you exactly how Conversa fills your calendar, and map out your first 30 days.
+          </p>
+        </div>
+
+        <div className="rounded-2xl overflow-hidden border border-border bg-card">
+          <iframe
+            src="https://link.iconmediaco.com/widget/booking/GRaS75T7cCEPfvRggZ3i"
+            style={{ width: "100%", height: "700px", border: "none" }}
+            title="Book a Strategy Session"
+          />
+        </div>
+
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-6 sm:gap-10">
+          {["No contracts", "100% free", "Real results in week 1"].map((item) => (
+            <div key={item} className="flex items-center gap-2 text-sm text-muted">
+              <svg className="w-5 h-5 text-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              {item}
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -1001,6 +1044,7 @@ export default function LandingPage() {
         <Testimonials />
         <Pricing />
         <FinalCTA />
+        <BookSection />
       </main>
       <Footer />
     </>

@@ -7,7 +7,7 @@ const navLinks = [
   { href: "/#features", label: "Features" },
   { href: "/#how-it-works", label: "How It Works" },
   { href: "/pricing", label: "Pricing" },
-  { href: "/contact", label: "Contact" },
+  { href: "/#book", label: "Book a Call" },
 ];
 
 export default function Navbar() {
@@ -68,7 +68,7 @@ export default function Navbar() {
           {/* CTA + Mobile Toggle */}
           <div className="flex items-center gap-4">
             <Link
-              href="/contact"
+              href="/#book"
               className="hidden md:inline-flex items-center px-4 py-2 text-sm font-medium rounded-lg bg-teal text-[#0a0a0f] hover:bg-teal-dark transition-colors"
             >
               Book a Demo
@@ -109,7 +109,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              href="/contact"
+              href="/#book"
               className="block text-center px-4 py-2.5 text-sm font-medium rounded-lg bg-teal text-[#0a0a0f] hover:bg-teal-dark transition-colors"
               onClick={() => setMobileOpen(false)}
             >

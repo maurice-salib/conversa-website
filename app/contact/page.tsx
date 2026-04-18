@@ -27,8 +27,9 @@ export default function ContactPage() {
             <div className="rounded-2xl overflow-hidden border border-border bg-card">
               <iframe
                 src="https://link.iconmediaco.com/widget/booking/GRaS75T7cCEPfvRggZ3i"
-                style={{ width: "100%", height: "600px", border: "none" }}
+                style={{ width: "100%", height: "780px", border: "none" }}
                 title="Book a Demo"
+                scrolling="no"
               />
             </div>
 

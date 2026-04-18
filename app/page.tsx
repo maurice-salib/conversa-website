@@ -984,35 +984,22 @@ function FinalCTA() {
 ───────────────────────────────────────────────────────────────── */
 function BookSection() {
   return (
-    <section id="book" className="py-8 sm:py-12 scroll-mt-16">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-5">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-teal/25 bg-teal/8 text-sm text-teal mb-4">
-            <span className="w-2 h-2 rounded-full bg-teal animate-pulse" />
-            Free 30-min call · No commitment
-          </div>
+    <section id="book" className="py-6 scroll-mt-16">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-4">
           <h2 className="text-2xl sm:text-3xl font-black tracking-tight">
             Let&apos;s Talk
           </h2>
+          <p className="mt-1 text-sm text-muted">Free 30-min call · No commitment · No contracts</p>
         </div>
 
         <div className="rounded-2xl overflow-hidden border border-border bg-card">
           <iframe
             src="https://link.iconmediaco.com/widget/booking/GRaS75T7cCEPfvRggZ3i"
-            style={{ width: "100%", height: "600px", border: "none" }}
+            style={{ width: "100%", height: "780px", border: "none" }}
             title="Book a Strategy Session"
+            scrolling="no"
           />
-        </div>
-
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-6 sm:gap-10">
-          {["No contracts", "100% free", "Real results in week 1"].map((item) => (
-            <div key={item} className="flex items-center gap-2 text-sm text-muted">
-              <svg className="w-5 h-5 text-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              {item}
-            </div>
-          ))}
         </div>
       </div>
     </section>
